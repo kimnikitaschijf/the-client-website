@@ -1,0 +1,90 @@
+* {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+:root {
+    --main-color-green: #4e7141;
+    --main-color-beige: #f9e9c2;
+    --main-color-orange: #ff8d06;
+    --main-color-brown: #491b02;
+    --card-color-orange: #ff9a41;
+    --card-color-green: #3c593e;
+    --text-color-white: #fff;
+    --text-color-black: #000;
+}
+
+header {
+    margin: -10px;
+    background-image: url(assets/bf2313f512b2aa9f8d58130796efd545.jpg);
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    text-align: center;
+    color: var(--text-color-white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: -10px;
+    }
+
+    li {
+        display: inline;
+        text-decoration: none;
+        text-align: center;
+        color: var(--titel);
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px var(--text-color-black);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color-white);
+        cursor: pointer;
+
+    }
+
+    a:hover {
+        color: var(--card-color-orange);
+    }
+}
+
+.logo {
+    margin: -10px;
+    width: 120px;
+    height: 80px;
+}
+
+h1 {
+    color: var(--text-color-white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 90px;
+    text-shadow: 2px 2px 5px var(--text-color-black);
+}
+
+.ondertitel {
+    padding: -10px;
+    margin-top: -15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px var(--text-color-black);
+}
+
+p {
+    padding: -10px;
+    margin-top: -15px;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-family: "Inter", sans-serif;
+    font-size: large;
+}
