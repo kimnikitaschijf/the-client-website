@@ -6,10 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-p {
-    max-width: 30rem;
-}
-
+/* kleurenpalette */
 :root {
     --main-color-green: #4e7141;
     --main-color-beige: #f9e9c2;
@@ -28,6 +25,7 @@ p {
     --image-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
+/* header */
 header {
     margin: -10px;
     background-image: url(assets/bf2313f512b2aa9f8d58130796efd545.jpg);
@@ -40,12 +38,14 @@ header {
     font-family: var(--header-font);
     font-weight: 400;
 
+    /* lijst van nav bar */
     ul {
         display: flex;
         justify-content: space-between;
         padding: -10px;
     }
 
+    /* items in de nav bar */
     li {
         display: inline;
         text-decoration: none;
@@ -57,6 +57,7 @@ header {
         text-shadow: 2px 2px 2px var(--text-color-black);
     }
 
+    /* instellingen linkjes nav bar */
     a {
         text-decoration: none;
         color: var(--text-color-white);
@@ -64,17 +65,19 @@ header {
 
     }
 
+    /* instellingen linkjes nav bar on hover */
     a:hover {
         color: var(--card-color-orange);
     }
 }
 
+/* bieb in bloei logo */
 .logo {
-    margin: -10px;
-    width: 10px;
-    height: 80px;
+    margin: 0px;
+    width: 100px;
 }
 
+/* groene bieb header/titel */
 h1 {
     color: var(--text-color-white);
     font-family: var(--header-font);
@@ -84,6 +87,7 @@ h1 {
     text-shadow: 2px 2px 5px var(--text-color-black);
 }
 
+/* ondertitel onder groene bieb titel */
 .ondertitel {
     padding: -10px;
     margin-top: -15px;
@@ -93,17 +97,15 @@ h1 {
     text-align: center;
 }
 
+/* tekst instellingen */
 p {
     padding: -10px;
     margin-top: -15px;
     font-family: var(--paragraph-font);
+    max-width: 30rem;
 }
 
-h2 {
-    font-family: var(--sub-header-font);
-    font-size: large;
-}
-
+/* blok groene bieb */
 .groenebieb {
     margin-left: 5em;
     margin-right: 5em;
@@ -116,21 +118,38 @@ h2 {
     align-items: center;
     display: block;
     unicode-bidi: isolate;
+    color: var(--main-color-green);
+    display: grid;
+    grid-column: 2em, 2em;
+    font-weight: 500;
 
+    /* titel groene bieb blok */
     h2 {
-        color: var(--card-color-green);
+        color: var(--main-color-green);
         font-family: var(--sub-header-font);
         font-weight: bold;
         font-size: 40px;
     }
 
-    .tekstbieb {
-        color: var(--card-color-green);
-        display: grid;
-        grid-column: 2em, 2em;
+    /* groene bieb knop */
+    .groenebiebknop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--link-font);
+        border-radius: 12px;
+        /* color: var(--main-color-beige); werkt niet!!! */
+        background: var(--card-color-green);
+        border: none;
+        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-weight: 500;
     }
 }
 
+/* partners blok */
 .partners {
     margin-left: 5em;
     margin-right: 5em;
@@ -143,7 +162,9 @@ h2 {
     align-items: center;
     display: block;
     unicode-bidi: isolate;
+    margin-top: -32px;
 
+    /* partners titel kopje */
     h2 {
         color: var(--main-color-beige);
         font-family: var(--sub-header-font);
@@ -151,99 +172,76 @@ h2 {
         font-size: 40px;
     }
 
+    /* tekst partners blok */
     .tekstpartners {
         color: var(--main-color-beige);
         display: grid;
         grid-column: 2em, 2em;
+        font-weight: 500;
+    }
+
+    /* foto's & logo's van partners */
+    .fotos {
+        width: 50px;
+    }
+
+    /* knop partners blok */
+    .partnersknop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: var(--link-font);
+        border-radius: 12px;
+        color: var(--main-color-green);
+        background: var(--main-color-beige);
+        border: none;
+        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-weight: 500;
     }
 }
 
-.logo {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.groenebiebknop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--link-font);
-    border-radius: 12px;
-    color: var(--main-color-beige);
-    background: var(--card-color-green);
-    border: none;
-    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-
-    button:focus {
-        box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-        outline: 0;
-  }
-}
-
-.partnersknop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--link-font);
-  border-radius: 12px;
-  color: var(--main-color-beige);
-  background: var(--card-color-green);
-  border: none;
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-button:focus {
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-}
-
+/* tekst stukje over samenwerken */
 .samenwerken {
     margin: 80px;
 
+    /* titel kopje samenwerken */
     h2 {
-        color: var(--card-color-green);
+        color: var(--main-color-green);
         font-family: "Poppins", sans-serif;
         font-weight: bold;
         font-size: 40px;
     }
 
+    /* tekst over samenwerken */
     .tekstsamenwerken {
-        color: var(--card-color-green);
+        color: var(--main-color-green);
+        font-weight: 500;
     }
 }
 
+/* footer */
 footer {
     bottom: 0;
     left: 0;
     background: var(--main-color-beige);
     text-align: center;
-    color: var(--card-color-green);
+    color: var(--main-color-green);
     font-family: "Poppins", sans-serif;
     font-size: 16px;
 
-    img {
-        object-fit: cover;
-        width: 25px;
-        height: 25px;
-        margin: 10px;
-        border: none;
-    }
-
+    /* titels van footers */
     h2 {
-        color: var(--card-color-green);
+        color: var(--main-color-green);
         font-family: "Poppins", sans-serif;
         font-weight: bold;
         font-size: 20px;
     }
 }
 
+/* tekst in de footer */
 .lijst {
     width: 100%;
     display: grid;
@@ -251,36 +249,18 @@ footer {
     list-style-type: none;
     text-align: auto;
     font-size: small;
-    color: var(--card-color-green);
+    color: var(--main-color-green);
 }
 
+/* snelkoppelingen */
 a {
-    color: var(--card-color-green);
+    color: var(--main-color-green);
     text-align: center;
     margin: 2em;
     text-decoration: none;
 }
 
+/* snelkoppelingen on hover */
 a:hover {
     color: var(--main-color-orange);
-}
-
-.blaadje {
-    background-image: url(assets/leaf-orange.jpg);
-    width: 20em;
-    height: 20em;
-    position: absolute;
-    z-index: 0;
-    left: -4em;
-    transform: rotate(135deg);
-}
-
-.blaadje {
-    background-image: url(assets/leaf-orange.jpg);
-    width: 20em;
-    height: 20em;
-    position: absolute;
-    z-index: 0;
-    left: -4em;
-    transform: rotate(135deg);
 }
