@@ -110,8 +110,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: #f1e5c8;
-    color: #3d4e36;
+    background-color: var(--main-color-beige);
+    color: var(--main-color-green);
     border-radius: 15px;
     max-width: 1200px;
     margin: 40px auto;
@@ -126,7 +126,7 @@ header {
     /* titel bieb */
     h1 {
         font-size: 3em;
-        color: #4d6146;
+        color: var(--main-color-green);
         margin-bottom: 20px;
     }
 
@@ -135,7 +135,7 @@ header {
         font-size: 1em;
         line-height: 1.6;
         margin-bottom: 20px;
-        color: #4d6146;
+        color: var(--main-color-green);
     }
 
     /* plaatje layout */
@@ -159,8 +159,8 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
-    background-color: #3d4e36;
-    color: #f4e4b1;
+    background-color: var(--card-color-green);
+    color: var(--main-color-beige);
     border-radius: 15px;
     max-width: 1200px;
     margin: 40px auto;
@@ -195,7 +195,7 @@ header {
 
     /* logo's instellingen */
     .photo {
-        background-color: #2f4133;
+        background-color: var(--main-color-beige);
         border-radius: 10px;
         height: 150px;
         /* Plaats hier een achtergrondafbeelding wanneer je een foto toevoegt */
@@ -215,7 +215,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    color: #3d4e36;
+    color: var(--main-color-green);
     border-radius: 15px;
     max-width: 1200px;
     margin: 40px auto;
@@ -224,19 +224,19 @@ header {
 
     /* layout samenwerken */
     .content {
-        width: 60%;
+        width: 80%;
     }
 
     /* titel kopje samenwerken */
     h2 {
         font-size: 4em;
-        color: #4d6146;
+        color: var(--main-color-green);
         margin-bottom: 20px;
     }
 
     /* Oranje kleur voor het vraagteken */
     .highlight {
-        color: #f4a261;
+        color: var(--card-color-orange);
         font-size: 4rem;
     }
 
@@ -245,12 +245,12 @@ header {
         font-size: 1em;
         line-height: 1.6;
         margin-bottom: 20px;
-        color: #4d6146;
+        color: var(--main-color-green);
     }
 
     /* Sterke tekstkleur 'klik hier' */
     p strong {
-        color: #4d6146;
+        color: var(--main-color-green);
     }
 
     /* foto */
@@ -261,12 +261,12 @@ header {
         bottom: 0;
         top: 0;
         overflow: hidden;
-        rotate: 330deg;
+        rotate: 350deg;
     }
 
     /* foto */
     .shape-container img {
-        width: 100%;
+        width: 70%;
         height: auto;
         object-fit: cover;
         position: absolute;
