@@ -259,18 +259,17 @@ header {
 
     /* foto */
     .shape-container {
-        width: 35%;
+        width: 25%;
         position: absolute;
         right: 0;
         bottom: 0;
         top: 0;
         overflow: hidden;
-        rotate: 350deg;
     }
 
     /* foto */
     .shape-container img {
-        width: 70%;
+        width: 200px;
         height: auto;
         object-fit: cover;
         position: absolute;
@@ -281,7 +280,7 @@ header {
 
 /* footer */
 .footer {
-    background-color: #f4e4bb;
+    background-color: var(--main-color-beige);
     /* licht beige achtergrond */
     padding: 40px 20px;
     position: relative;
@@ -303,8 +302,7 @@ header {
     /* titel kopjes footer */
     .footer-column h3 {
         font-size: 1.5 rem;
-        color: #4f6732;
-        /* donkergroene kleur */
+        color: var(--main-color-green);
         margin-bottom: 20px;
         font-weight: bold;
     }
@@ -313,7 +311,7 @@ header {
     .footer-column p,
     .footer-column a {
         font-size: 1rem;
-        color: #4f6732;
+        color: var(--main-color-green);
         margin-bottom: 10px;
         text-decoration: none;
     }
