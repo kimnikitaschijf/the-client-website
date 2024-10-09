@@ -40,7 +40,7 @@ Mijn HTML structuur is ingedeeld in blokken:
 
 Mijn CSS is ingedeeld in vlakken. Per onderdeel van mijn HTML is een een CSS stukje gemaakt met de bijbehorende CSS stukjes van onderandere de H1/H2's & de paragrafen. 
 Deze staan genest in de sectie en hebben allemaal een comment erbij staan met uitleg wat het stukje CSS doet. 
-Voor de blokjes van 'de groene bieb' & 'partners' heb ik een flexbox gebruikt. Voor de vierkantjes van de 'logo's' bij het stukje 'partners' heb ik een grid gebruikt. Op deze manier komen we mooi 3x3 te staan. 
+Voor de blokjes van 'de groene bieb' & 'partners' heb ik een flexbox gebruikt. Voor de vierkantjes van de 'logo's' bij het stukje 'partners' heb ik een grid gebruikt. Op deze manier komen ze mooi 3x3 te staan. 
 
 Ik heb **geen** JavaScript gebruikt. 
 
