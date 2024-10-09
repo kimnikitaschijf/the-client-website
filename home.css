@@ -36,7 +36,7 @@ body {
 header {
     margin: -10px;
     background-image: url(assets/bf2313f512b2aa9f8d58130796efd545.jpg);
-    padding: 50px;
+    padding: 150px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
@@ -48,8 +48,8 @@ header {
     /* lijst van nav bar */
     ul {
         display: flex;
-        justify-content: space-between;
-        padding: -10px;
+        justify-content: right;
+        gap: 20px;
     }
 
     /* items in de nav bar */
@@ -81,6 +81,8 @@ header {
     .logo {
         margin: 0px;
         width: 100px;
+        display: flex;
+        justify-content: left;
     }
 
     /* groene bieb header/titel */
@@ -113,10 +115,11 @@ header {
     background-color: var(--main-color-beige);
     color: var(--main-color-green);
     border-radius: 15px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;
+    margin-top: -50px;
 
     /* layout van bieb */
     .content {
@@ -140,7 +143,7 @@ header {
 
     /* plaatje layout */
     .image-container {
-        width: 45%;
+        width: 40%;
     }
 
     /* plaatje instellingen */
@@ -162,7 +165,7 @@ header {
     background-color: var(--card-color-green);
     color: var(--main-color-beige);
     border-radius: 15px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto;
     font-weight: 400;
 
@@ -217,14 +220,14 @@ header {
     padding: 40px;
     color: var(--main-color-green);
     border-radius: 15px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 40px auto;
     position: relative;
     overflow: hidden;
 
     /* layout samenwerken */
     .content {
-        width: 80%;
+        width: 75%;
     }
 
     /* titel kopje samenwerken */
@@ -276,43 +279,58 @@ header {
 }
 
 /* footer */
-footer {
-    background: var(--main-color-beige);
-    text-align: center;
-    color: var(--main-color-green);
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    width: 100%;
+.footer {
+    background-color: #f4e4bb;
+    /* licht beige achtergrond */
+    padding: 40px 20px;
+    position: relative;
 
-    /* titels van footers */
-    h2 {
-        color: var(--main-color-green);
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-
-    /* tekst in de footer */
-    .column {
-        width: 100%;
+    /* instellingen 3 stukjes tekst */
+    .footer-container {
         display: flex;
-        justify-content: center;
-        text-align: auto;
-        font-size: small;
-        color: var(--main-color-green);
-        list-style: none;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    /* snelkoppelingen */
-    a {
-        color: var(--main-color-green);
+    /* instellingen tekst rij */
+    .footer-column {
+        flex: 1;
         text-align: center;
-        margin: 2em;
+    }
+
+    /* titel kopjes footer */
+    .footer-column h3 {
+        font-size: 1.5 rem;
+        color: #4f6732;
+        /* donkergroene kleur */
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    /* tekst in footer */
+    .footer-column p,
+    .footer-column a {
+        font-size: 1rem;
+        color: #4f6732;
+        margin-bottom: 10px;
         text-decoration: none;
     }
 
-    /* snelkoppelingen on hover */
-    a:hover {
+    /* rijtjes in footer */
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* layout footer tekst */
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    /* linkjes on hover */
+    .footer-column ul li a:hover {
+        text-decoration: underline;
         color: var(--main-color-orange);
     }
 }
