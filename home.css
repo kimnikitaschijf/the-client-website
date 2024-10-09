@@ -168,6 +168,7 @@ header {
     max-width: 1400px;
     margin: 40px auto;
     font-weight: 400;
+    margin-top: -40px;
 
     /* partners blok instellingen */
     .content {
